@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Communication - Kwade Emmanuel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="site-bg" aria-hidden="true">
+    <span class="signal-line line-one"></span>
+    <span class="signal-line line-two"></span>
+    <span class="signal-line line-three"></span>
+    <span class="data-packet packet-one"></span>
+    <span class="data-packet packet-two"></span>
+    <span class="data-packet packet-three"></span>
+    <span class="network-node node-one"></span>
+    <span class="network-node node-two"></span>
+    <span class="network-node node-three"></span>
+
+    <!-- Satellite orbit (background) -->
+    <span class="satellite-orbit" aria-hidden="true">
+      <span class="satellite-glow"></span>
+      <span class="satellite"></span>
+      <span class="satellite-panel panel-left"></span>
+      <span class="satellite-panel panel-right"></span>
+    </span>
+  </div>
+
+  <div class="page-loader" id="pageLoader" aria-hidden="true">
+    <div class="loader-panel">
+      <span class="loader-ring"></span>
+      <p>Opening resource</p>
+    </div>
+  </div>
+
+  <nav id="navbar">
+    <a class="nav-brand" href="#top" aria-label="Go to top">
+      <span class="nav-mark">DC</span>
+      <span>Kwade Emmanuel</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#topics">Topics</a></li>
+      <li><a href="#telegraph">Telegraph</a></li>
+      <li><a href="#inspiration">Inspiration</a></li>
+      <li><a href="#resources">Resources</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mob-link">About</a>
+    <a href="#topics" class="mob-link">Topics</a>
+    <a href="#telegraph" class="mob-link">Telegraph</a>
+    <a href="#inspiration" class="mob-link">Inspiration</a>
+    <a href="#resources" class="mob-link">Resources</a>
+  </div>
+
+  <header class="hero" id="top">
+    <div class="hero-visual" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </div>
+
+    <div class="hero-content">
+      <p class="eyebrow">Data Communication</p>
+      <h1>Data Communication Portfolio</h1>
+      <p class="hero-sub">
+        A neat study showcase covering transmission media, signals, encoding, networking models, and the roots of digital communication.
+      </p>
+      <div class="hero-actions">
+        <a href="#resources" class="btn primary">Open Resources</a>
+        <a href="#inspiration" class="btn secondary">See Inspiration</a>
+      </div>
+      <div class="student-card">
+        <span>Student ID</span>
+        <strong>PUIT24110048</strong>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section section-about">
+      <div class="section-inner about-grid">
+        <div class="profile-card">
+          <img
+            src="images/me.jpg"
+            alt="Kwade Emmanuel"
+            class="about-image"
+          />
+          <div class="profile-meta">
+            <span>Kwade Emmanuel</span>
+            <strong>PUIT24110048</strong>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <span class="section-label">01 / About Me</span>
+          <h2>Kwade Emmanuel</h2>
+          <p>
+            I am a Data Communication student interested in how information moves through networks, from copper wires and optical fibre to wireless systems and internet protocols.
+          </p>
+          <p>
+            This page presents my course learning in a clear, modern interface, with quick access to my full assignment document.
+          </p>
+          <div class="about-tags">
+            <span>Networking</span>
+            <span>Signal Theory</span>
+            <span>Protocols</span>
+            <span>Transmission Media</span>
+      </div>
+    </section>
+
+    <section id="topics" class="section section-topics">
+      <div class="section-inner">
+        <span class="section-label">02 / Core Topics</span>
+        <h2>What I Have Studied</h2>
+        <p class="section-intro">Data Communication explains how data is represented, transmitted, protected, and delivered reliably between systems.</p>
+
+        <div class="topics-grid">
+          <article class="topic-card" data-num="01">
+            <div class="topic-icon">TEL</div>
+            <h3>Telegraph</h3>
+            <p>The electric telegraph shows how coded messages were transmitted through electrical signals over long distances.</p>
+          </article>
+
+          <article class="topic-card" data-num="02">
+            <div class="topic-icon">MOR</div>
+            <h3>Morse Code</h3>
+            <p>Morse code represents letters and numbers using short and long signal pulses known as dots and dashes.</p>
+          </article>
+
+          <article class="topic-card" data-num="03">
+            <div class="topic-icon">SIG</div>
+            <h3>Data Signals</h3>
+            <p>Data signals explain how information is carried in analogue or digital form through communication channels.</p>
+          </article>
+
+          <article class="topic-card" data-num="04">
+            <div class="topic-icon">OSI</div>
+            <h3>OSI Model</h3>
+            <p>The OSI model divides network communication into seven layers, from the physical layer to the application layer.</p>
+          </article>
+
+          <article class="topic-card" data-num="05">
+            <div class="topic-icon">PGP</div>
+            <h3>PGP</h3>
+            <p>Pretty Good Privacy protects messages and files through encryption, digital signatures, and key management.</p>
+          </article>
+
+          <article class="topic-card" data-num="06">
+            <div class="topic-icon">CPT</div>
+            <h3>Cisco Packet Tracer</h3>
+            <p>Cisco Packet Tracer is used to design, simulate, and test computer networks before real deployment.</p>
+          </article>
+
+          <article class="topic-card" data-num="07">
+            <div class="topic-icon">CIA</div>
+            <h3>CIA Triad</h3>
+            <p>The CIA triad covers confidentiality, integrity, and availability as the main goals of information security.</p>
+          </article>
+
+          <article class="topic-card" data-num="08">
+            <div class="topic-icon">SAT</div>
+            <h3>Satellites</h3>
+            <p>Satellite communication uses orbiting systems to send voice, data, television, and internet signals across wide areas.</p>
+          </article>
+
+          <article class="topic-card" data-num="09">
+            <div class="topic-icon">NET</div>
+            <h3>Networking</h3>
+            <p>Networking connects computers and devices so they can share data, services, and resources efficiently.</p>
+          </article>
+
+          <article class="topic-card" data-num="10">
+            <div class="topic-icon">AP</div>
+            <h3>Access Point</h3>
+            <p>An access point allows wireless devices to connect to a wired network using Wi-Fi technology.</p>
+          </article>
+
+          <article class="topic-card" data-num="11">
+            <div class="topic-icon">POE</div>
+            <h3>Power over Ethernet</h3>
+            <p>Power over Ethernet carries electrical power and network data through the same Ethernet cable.</p>
+          </article>
+
+          <article class="topic-card" data-num="12">
+            <div class="topic-icon">DC</div>
+            <h3>Data Communication</h3>
+            <p>Data Communication is the process of sending and receiving digital information between devices through a medium.</p>
+          </article>
+
+          <article class="topic-card" data-num="13">
+            <div class="topic-icon">KLE</div>
+            <h3>Kleopatra Encryption</h3>
+            <p>Kleopatra is a certificate manager used with OpenPGP tools to encrypt, decrypt, sign, and verify files or messages.</p>
+          </article>
+        </div>
+
+        <div class="ext-links-bar">
+          <span>External Resources</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="telegraph" class="section section-telegraph">
+      <div class="section-inner">
+        <span class="section-label">03 / Historical Roots</span>
+        <h2>The Electric Telegraph</h2>
+        <p class="section-intro">The telegraph is an early example of data communication because it transmitted coded information electrically over long distances.</p>
+
+        <div class="telegraph-layout">
+          <div class="diagram-wrap">
+            <svg viewBox="0 0 780 340" xmlns="http://www.w3.org/2000/svg" class="telegraph-svg" aria-label="Electric telegraph diagram">
+              <rect width="780" height="340" fill="#08111f" rx="18"/>
+              <line x1="0" y1="310" x2="780" y2="310" stroke="#334155" stroke-width="1.5" stroke-dasharray="6,4"/>
+              <g stroke="#8b6b45" stroke-width="7" stroke-linecap="round">
+                <line x1="100" y1="310" x2="100" y2="130"/>
+                <line x1="290" y1="310" x2="290" y2="115"/>
+                <line x1="490" y1="310" x2="490" y2="120"/>
+                <line x1="680" y1="310" x2="680" y2="130"/>
+              </g>
+              <g fill="#b08968">
+                <rect x="78" y="124" width="44" height="10" rx="3"/>
+                <rect x="268" y="109" width="44" height="10" rx="3"/>
+                <rect x="468" y="114" width="44" height="10" rx="3"/>
+                <rect x="658" y="124" width="44" height="10" rx="3"/>
+              </g>
+              <polyline points="90,122 100,122 290,107 490,112 680,122 690,122" fill="none" stroke="#f59e0b" stroke-width="3"/>
+              <polyline points="90,136 100,136 290,121 490,126 680,136 690,136" fill="none" stroke="#22c55e" stroke-width="2"/>
+              <g>
+                <rect x="18" y="200" width="86" height="92" fill="#10243d" stroke="#38bdf8" stroke-width="2" rx="12"/>
+                <text x="61" y="224" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#93c5fd">SENDER</text>
+                <rect x="32" y="246" width="58" height="16" fill="#1d4ed8" rx="5"/>
+                <circle cx="61" cy="238" r="6" fill="#f59e0b"/>
+                <text x="61" y="278" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#cbd5e1">Morse key</text>
+              </g>
+              <g>
+                <rect x="676" y="200" width="86" height="92" fill="#10243d" stroke="#38bdf8" stroke-width="2" rx="12"/>
+                <text x="719" y="224" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#93c5fd">RECEIVER</text>
+                <rect x="692" y="240" width="54" height="28" fill="#1d4ed8" rx="6"/>
+                <path d="M 706 240 Q 719 220 732 240" fill="none" stroke="#f59e0b" stroke-width="3"/>
+                <text x="719" y="282" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#cbd5e1">Sounder</text>
+              </g>
+              <circle cx="0" cy="122" r="5" fill="#f59e0b">
+                <animateMotion dur="3s" repeatCount="indefinite" path="M 90,122 L 290,107 L 490,112 L 690,122"/>
+              </circle>
+              <circle cx="0" cy="136" r="4" fill="#22c55e">
+                <animateMotion dur="3s" begin="1s" repeatCount="indefinite" path="M 90,136 L 290,121 L 490,126 L 690,136"/>
+              </circle>
+              <text x="390" y="42" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="18" fill="#f8fafc" font-weight="700">Electric Telegraph System</text>
+              <text x="390" y="72" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#f59e0b" letter-spacing="4">.-. .-.</text>
+              <text x="390" y="94" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#93c5fd">Morse code signal</text>
+            </svg>
+            <p class="diagram-caption">Fig. 1 - Simplified telegraph system showing signal movement from sender to receiver.</p>
+          </div>
+
+          <div class="telegraph-facts">
+            <h3>How It Worked</h3>
+            <div class="fact-item"><span>01</span><p><strong>The sender</strong> pressed a Morse key to create short and long electrical pulses.</p></div>
+            <div class="fact-item"><span>02</span><p><strong>The wire</strong> carried the pulses across distance through a connected circuit.</p></div>
+            <div class="fact-item"><span>03</span><p><strong>The receiver</strong> converted the pulses into audible clicks or marks.</p></div>
+            <div class="fact-item"><span>04</span><p><strong>The impact</strong> proved that information could be coded and transmitted electronically.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="inspiration" class="section section-inspiration">
+      <div class="section-inner">
+        <span class="section-label">04 / Inspiration</span>
+        <h2>What Inspires Me</h2>
+
+        <div class="inspiration-grid">
+          <div class="inspiration-quote">
+            <blockquote>"Communication engineering connects people, ideas, and opportunities."</blockquote>
+            <cite>Data Communication Reflection</cite>
+          </div>
+
+          <div class="inspiration-cards">
+            <article><h4>Africa's Digital Future</h4><p>Reliable networks can improve education, healthcare, business, and everyday communication across Ghana and Africa.</p></article>
+            <article><h4>Optical Fibre Speed</h4><p>The ability to move messages around the world in milliseconds shows the power of physics and engineering.</p></article>
+            <article><h4>Information Theory</h4><p>Claude Shannon's ideas help explain how information can be measured, compressed, and sent accurately.</p></article>
+            <article><h4>Modern Networks</h4><p>5G, satellite internet, and future systems continue to expand what communication technology can achieve.</p></article>
+          </div>
+        </div>
+
+        <div id="videoSection" class="video-section">
+          <h3>Watch: How the Internet Works</h3>
+          <p class="section-intro">A helpful video resource for understanding the core ideas behind data communication.</p>
+          <div class="video-wrap">
+            <iframe
+              src="https://www.youtube.com/embed/VDkYgGGtDnc?si=J_otyI47u_APiDvU"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources" class="section section-resources">
+      <div class="section-inner">
+        <span class="section-label">05 / Resources</span>
+        <h2>Study Resources</h2>
+        <p class="section-intro">Documents, learning links, and videos connected to the Data Communication course.</p>
+
+        <div class="resources-grid">
+          <article class="resource-card featured">
+            <div class="resource-top"><span>Assignment</span><strong>DOCX</strong></div>
+            <h4>Course Assignment</h4>
+            <p>Save my uploaded Data Communication assignment document to your device.</p>
+            <a href="DATA_COMMUNICATION.docx" class="resource-btn" download>Save DOCX</a>
+          </article>
+
+          <article class="resource-card">
+            <div class="resource-top"><span>Video</span><strong>PLAY</strong></div>
+            <h4>Data Comm Video</h4>
+            <p>Jump to the embedded video section and watch inside the page.</p>
+            <a href="#videoSection" class="resource-btn" id="scrollToVideoLink">Watch Video</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <p>Kwade Emmanuel | Data Communication</p>
+        <span>Student ID: PUIT24110048</span>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#topics">Topics</a>
+        <a href="#resources">Resources</a>
+        <a href="https://github.com/search?q=Kwade+Emmanuel&type=users" target="_blank" rel="noopener noreferrer" class="github-link">My GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+  <button class="topics-btn" id="topicsBtn" aria-label="View Topics">Topics</button>
+</body>
+</html>
