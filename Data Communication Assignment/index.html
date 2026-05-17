@@ -318,8 +318,15 @@
           <article class="resource-card featured">
             <div class="resource-top"><span>Assignment</span><strong>DOCX</strong></div>
             <h4>Course Assignment</h4>
-            <p>Save my uploaded Data Communication assignment document to your device.</p>
+            <p>Save the Word version of my Data Communication assignment to your device.</p>
             <a href="DATA_COMMUNICATION.docx" class="resource-btn" download>Save DOCX</a>
+          </article>
+
+          <article class="resource-card">
+            <div class="resource-top"><span>Assignment</span><strong>PDF</strong></div>
+            <h4>View Assignment</h4>
+            <p>Open the full assignment document inside the page.</p>
+            <a href="#assignmentViewer" class="resource-btn">Preview PDF</a>
           </article>
 
           <article class="resource-card">
@@ -328,6 +335,31 @@
             <p>Jump to the embedded video section and watch inside the page.</p>
             <a href="#videoSection" class="resource-btn" id="scrollToVideoLink">Watch Video</a>
           </article>
+        </div>
+
+        <div class="assignment-viewer" id="assignmentViewer">
+          <div class="viewer-heading">
+            <div>
+              <span class="section-label">Full Document</span>
+              <h3>Data Communication Assignment</h3>
+              <p>Preview the assignment here, then use the Word file button if you want to save it.</p>
+            </div>
+            <div class="viewer-actions">
+              <a href="DATA_COMMUNICATION.pdf" class="resource-btn" target="_blank" rel="noopener noreferrer">Open PDF</a>
+              <a href="DATA_COMMUNICATION.docx" class="resource-btn" download>Save Word File</a>
+            </div>
+          </div>
+          <object
+            data="DATA_COMMUNICATION.pdf#view=FitH"
+            type="application/pdf"
+            class="pdf-object"
+            aria-label="Data Communication Assignment PDF"
+          >
+            <div class="pdf-fallback">
+              <p>Your browser could not show the PDF preview here.</p>
+              <a href="DATA_COMMUNICATION.pdf" class="resource-btn" target="_blank" rel="noopener noreferrer">Open PDF</a>
+            </div>
+          </object>
         </div>
       </div>
     </section>
