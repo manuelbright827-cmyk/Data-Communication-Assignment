@@ -1011,21 +1011,82 @@ a {
   font-weight: 800;
 }
 
+.inspiration-grid {
+  display: grid;
+  grid-template-columns: 310px 1fr;
+  gap: 1.4rem;
+  margin-bottom: 3rem;
+  align-items: start;
+}
+
+.inspiration-quote {
+  padding: 1.5rem;
+  border-left: 5px solid var(--amber);
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: var(--radius-lg);
+}
+
+.inspiration-quote blockquote {
+  margin: 0;
+}
+
+.inspiration-quote cite {
+  display: block;
+  margin-top: 1rem;
+  color: var(--muted);
+  font-style: normal;
+  font-weight: 800;
+}
+
 .inspiration-cards {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 1rem;
 }
 
-.inspiration-cards article {
-  padding: 1.25rem;
-  transition: var(--transition);
+.inspiration-card {
+  padding: 1.4rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, rgba(239, 246, 255, 0.95), rgba(236, 254, 255, 0.88));
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
 }
 
-.inspiration-cards h4 {
-  margin-bottom: 0.5rem;
-  font-size: 1.05rem;
+.inspiration-card::before {
+  content: "";
+  position: absolute;
+  inset: -40% -30% auto auto;
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle at 30% 30%, rgba(0, 166, 214, 0.22), transparent 60%),
+    radial-gradient(circle at 65% 65%, rgba(139, 92, 246, 0.18), transparent 55%);
+  transform: rotate(12deg);
+  pointer-events: none;
 }
+
+.inspiration-card h4 {
+  color: var(--ink);
+  font-family: "Sora", sans-serif;
+  font-weight: 800;
+  font-size: 1.15rem;
+  margin-bottom: 0.7rem;
+  position: relative;
+  z-index: 1;
+}
+
+.inspiration-card p {
+  color: var(--muted);
+  font-size: 0.98rem;
+  position: relative;
+  z-index: 1;
+}
+
+.inspiration-card p + p {
+  margin-top: 0.9rem;
+}
+
 
 .video-section {
   padding-top: 2.4rem;
